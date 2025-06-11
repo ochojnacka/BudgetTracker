@@ -1,0 +1,21 @@
+form {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+textarea {
+    border: 2px lightgrey solid;
+    border-radius: 6px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.file-input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.file-input {
+    opacity: 0;
+}
