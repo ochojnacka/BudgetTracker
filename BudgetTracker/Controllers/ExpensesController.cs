@@ -17,7 +17,7 @@ namespace BudgetTracker.Controllers
             _context = context;
         }
 
-        // GET: api/expenses  
+        // GET: api/expenses  -> tu jest sukces 200 OK
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Expense>>> GetExpenses()
         {
@@ -31,7 +31,7 @@ namespace BudgetTracker.Controllers
             }
         }
 
-        // GET: api/expenses/1 
+        // GET: api/expenses/1 -> tu jest sukces 200 OK
         [HttpGet("{id}")]
         public async Task<ActionResult<Expense>> GetExpense(int id)
         {
@@ -51,7 +51,7 @@ namespace BudgetTracker.Controllers
 
         }
 
-        // POST: api/expenses  
+        // POST: api/expenses  -  tu jest sukces 201 Created
         [HttpPost]
         public async Task<ActionResult<Expense>> CreateExpense([FromBody] Expense expense)
         {
@@ -68,7 +68,7 @@ namespace BudgetTracker.Controllers
             }
         }
 
-        // PUT: api/expenses/1
+        // PUT: api/expenses/1 -  tu jest sukces 204 NoContent
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateExpense(int id, Expense updatedExpense)
         {
@@ -97,7 +97,7 @@ namespace BudgetTracker.Controllers
 
         }
 
-        // DELETE: api/expenses/5  
+        // DELETE: api/expenses/5  - tu jest sukces 204 NoContent
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteExpense(int id)
         {
@@ -121,7 +121,7 @@ namespace BudgetTracker.Controllers
         // GET: api/expenses/category/{category}
 
 
-        // POST: api/expenses/upload
+        // POST: api/expenses/upload -> tu jest sukces 200 OK
         [HttpPost("upload")]
         public async Task<IActionResult> UploadFile([FromForm] int expenseId, [FromForm] IFormFile file)
         {
