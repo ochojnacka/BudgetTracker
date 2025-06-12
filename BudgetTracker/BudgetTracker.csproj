@@ -17,7 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Uploads\" />
     <Folder Include="src\" />
   </ItemGroup>
 
